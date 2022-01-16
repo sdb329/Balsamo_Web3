@@ -7,7 +7,5 @@
   "license": "UNLICENSED",
   "repository": {},
   "private": true,
-  "dependencies": {
-    "gsap": "^3.9.1"
-  }
+  "dependencies": {}
 }
