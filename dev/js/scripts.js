@@ -2,27 +2,49 @@
 
 
 
+
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { usingScroll } from "./scrollAnimation"
+
+
+
 import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { Flip } from "gsap/Flip";
 import { MotionPathHelper } from "gsap/MotionPathHelper";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-gsap.registerPlugin(GSDevTools, MorphSVGPlugin, DrawSVGPlugin, Flip, MotionPathHelper, MotionPathPlugin);
+gsap.registerPlugin(GSDevTools, MorphSVGPlugin, DrawSVGPlugin, Flip, MotionPathHelper, MotionPathPlugin, ScrollTrigger);
+
+
+// window.addEventListener('load', function(){
+
+
+//     usingScroll();
+// });
+
 
 // // const 
 // // var
 // // let
 
 
+
+
+
+
+
+
 const mainTL = gsap.timeline();
-
-
 
 
 function dirtAppearing() {
     const tl = gsap.timeline();
+
+    // tl.set("#text", {
+    //     alpha: 0
+    // });
 
     tl.set(".leaves-down", {
         alpha: 0
@@ -540,6 +562,8 @@ function heroAnimation() {
     }, "-=2.5");
 
 
+
+
     tl.from("#content h2", {
         duration: 2.5,
         scale: 0,
@@ -555,18 +579,25 @@ function heroAnimation() {
         alpha: 0,
         x: "+=400"
     }, "<");
-    tl.from("#content p", {
-        duration: 6,
-        x: "+=150",
-        alpha: 0,
-        stagger: 0.4,
-        ease: "back"
-    }, "-=3");
+    // tl.from("#content p", {
+    //     duration: 6,
+    //     x: "+=150",
+    //     alpha: 0,
+    //     stagger: 0.4,
+    //     ease: "back"
+    // }, "-=3");
 
 
 
     return tl;
 }
+
+window.addEventListener('load', function(){
+
+    usingScroll()
+    
+});
+
 
 
 
@@ -584,6 +615,7 @@ mainTL
     .add(PumpkinLightingUp(), "-=1")
     .add(leavesSwipe(), "-=1")
     .add(heroAnimation())
+    .add(usingScroll())
 
 ;
 
@@ -591,13 +623,28 @@ mainTL
 
 
 
+// 
+// 
+// ------------------------------------
+// ------------------------------------
+// 
 
 
 
 
 
-// GSDevTools.create();
+// 
+// ------------------------------------
+// ------------------------------------
+// 
+// 
+
+
+
+
+GSDevTools.create();
 MorphSVGPlugin.create();
+ScrollTrigger.create();
 DrawSVGPlugin.create();
 Flip.create();
 MotionPathHelper.create();

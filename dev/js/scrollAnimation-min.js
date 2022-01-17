@@ -1,0 +1,1 @@
+import{gsap}from"gsap";import{ScrollTrigger}from"gsap/ScrollTrigger";gsap.registerPlugin(ScrollTrigger);export function usingScroll(){console.log("this is working test123");const r=gsap.timeline();return r.from("#content p",{duration:6,x:"+=150",alpha:0,stagger:.4,ease:"back",scrollTrigger:"#content p"},"-=3"),r}
