@@ -486,7 +486,6 @@ header div aside a {
   }
 }
 #hero div #hero-content ul #header1 {
-  border: 1px solid green;
   grid-area: hero;
   text-align: center;
   height: 876px;
@@ -520,7 +519,6 @@ header div aside a {
   }
 }
 #hero div #hero-content ul #l1 {
-  border: 1px solid red;
   grid-area: leaf1;
   background-image: url("../img/hero/leaves1.svg");
   width: 100%;
@@ -554,7 +552,6 @@ header div aside a {
   }
 }
 #hero div #hero-content ul #l2 {
-  border: 1px solid red;
   grid-area: leaf2;
   height: 12px;
   background-image: url("../img/hero/leaves2.svg");

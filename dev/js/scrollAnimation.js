@@ -35,13 +35,33 @@ export function usingScroll(){
    
             scrollTrigger: {
                 trigger: "#content",
-                start: "top 60%",
-                end: "bottom 80%",
+                start: "top 30%",
+                end: "bottom 60%",
                 toggleActions: "reverse none none restart",
-                scrub: true,
-                markers: true
+                scrub: true
             }
         });
+
+
+        tl.fromTo("#boxes-grid",
+    
+        { 
+            alpha: 0
+        },
+        
+        
+        {
+                // duration: 6,
+                alpha: 1,
+       
+                scrollTrigger: {
+                    trigger: "#content",
+                    start: "top 60%",
+                    end: "bottom 90%",
+                    toggleActions: "reverse none none restart",
+                    scrub: true
+                }
+            });
 
         
 
@@ -62,8 +82,7 @@ export function usingScroll(){
                 start: "top 60%",
                 end: "bottom 80%",
                 toggleActions: "reverse none none restart",
-                scrub: true,
-                markers: true
+                scrub: true
             }
         });
 
