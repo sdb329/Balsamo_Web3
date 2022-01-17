@@ -643,9 +643,9 @@ mainTL
 
 
 GSDevTools.create();
-MorphSVGPlugin.create();
-ScrollTrigger.create();
-DrawSVGPlugin.create();
-Flip.create();
-MotionPathHelper.create();
-MotionPathPlugin.create();
+// MorphSVGPlugin.create();
+// ScrollTrigger.create();
+// DrawSVGPlugin.create();
+// Flip.create();
+// MotionPathHelper.create();
+// MotionPathPlugin.create();

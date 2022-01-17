@@ -2,9 +2,10 @@
 
 #preloader{
     position: fixed;
-    height: 100vh;
-    width: 102%;
+    height: 100%;
+    width: 100vw;
     z-index: 1000;
+    overflow: hidden;
 
     // border: 1px solid red;
 
@@ -13,6 +14,8 @@
     
 
         >svg{
+            width: 100%;
+            border: 1px solid red;
             .hidden{
                     visibility: hidden;
                 }
