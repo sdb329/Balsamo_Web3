@@ -21,19 +21,68 @@ export function usingScroll(){
 
     const tl = gsap.timeline();
 
-    tl.to("#text", {
+    tl.fromTo("#text",
+    
+    { 
+        alpha: 0
+    },
+    
+    
+    {
             // duration: 6,
-            x: "-=50",
+            x: "-=20",
             alpha: 1,
-            stagger: 0.4,
-            ease: "back",
+   
             scrollTrigger: {
                 trigger: "#content",
-                toggleActions: "restart none resume none",
+                start: "top 60%",
+                end: "bottom 80%",
+                toggleActions: "reverse none none restart",
                 scrub: true,
                 markers: true
             }
         });
+
+        
+
+        tl.fromTo("#imagec",
+    
+    { 
+        alpha: 0
+    },
+    
+    
+    {
+            // duration: 6,
+            x: "-=20",
+            alpha: 1,
+   
+            scrollTrigger: {
+                trigger: "#content",
+                start: "top 60%",
+                end: "bottom 80%",
+                toggleActions: "reverse none none restart",
+                scrub: true,
+                markers: true
+            }
+        });
+
+
+    // tl.from("#text", {
+    //     duration: 6,
+    //    scaleX:0,
+    //    scrollTrigger: {
+    //                 trigger: "#content",
+    //                 start: "top 60%",
+    //                 end: "bottom 80%",
+    //                 toggleActions: "restart none resume none",
+    //                 scrub: true,
+    //                 markers: true
+    //             }
+
+
+    
+    // });
 
    return tl;
 

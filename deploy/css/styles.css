@@ -644,6 +644,7 @@ header div aside a {
   left: 20vw;
   top: 926px;
   background: #7D2B1B;
+  margin-top: -50px;
   z-index: 20;
 }
 #content ul #boxes-grid #box2 {
@@ -655,6 +656,7 @@ header div aside a {
   top: 1125px;
   border: 10px solid #C8BDB4;
   box-sizing: border-box;
+  margin-top: -100px;
   z-index: 22;
 }
 #content ul #boxes-grid #box3 {
@@ -664,6 +666,7 @@ header div aside a {
   height: 971px;
   left: 2vw;
   top: 1158px;
+  margin-top: -100px;
   background: #B9542F;
   z-index: 21;
 }

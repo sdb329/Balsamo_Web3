@@ -574,11 +574,11 @@ function heroAnimation() {
         duration: 4,
         alpha: 0
     }, "-=4");
-    tl.from("#content #imagec", {
-        duration: 4,
-        alpha: 0,
-        x: "+=400"
-    }, "<");
+    // tl.from("#content #imagec", {
+    //     duration: 4,
+    //     alpha: 0,
+    //     x: "+=400"
+    // }, "<");
     // tl.from("#content p", {
     //     duration: 6,
     //     x: "+=150",
